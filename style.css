@@ -14,11 +14,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 html {
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 body {
@@ -38,20 +38,19 @@ header {
     align-items: center;
     padding: 10px 200px;
     transition: background-color 0.5s;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
     text-decoration: none;
-    color: var(--primary-color); /* Default color, can be overridden */
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 1.8em;
     letter-spacing: 1px;
 }
 
-/* New style for white logo */
 .white-logo {
-    color: var(--text-light); /* Set logo color to white */
+    color: var(--text-light);
 }
 
 .navigation a {
@@ -65,28 +64,8 @@ header {
 
 .navigation a:hover {
     color: var(--primary-color);
-    transform: translateY(-2px); /* Lift effect on hover */
+    transform: translateY(-2px);
 }
-
-/* The #mode-toggle button is removed from HTML, so this CSS is no longer needed */
-/*
-#mode-toggle {
-    background: none;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    cursor: pointer;
-    font-size: 1.2em;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-left: 20px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-#mode-toggle:hover {
-    background-color: var(--primary-color);
-    color: var(--text-dark);
-}
-*/
 
 /* --- Main Section --- */
 section {
@@ -102,7 +81,6 @@ section {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* Adding a subtle overlay for better text readability */
     position: relative;
     z-index: 1;
 }
@@ -114,7 +92,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
 
@@ -128,14 +106,14 @@ section {
     display: inline-block;
     margin-top: 10px;
     color: var(--primary-color);
-    font-size: 3.5em; 
+    font-size: 3.5em;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 .main h3 {
     color: var(--text-light);
-    font-size: 1.8em; 
+    font-size: 1.8em;
     font-weight: 500;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -157,7 +135,7 @@ section {
     display: inline-block;
     padding: 0.9375em 2.1875em;
     letter-spacing: 1px;
-    border-radius: 50px; /* More modern, pill-shaped buttons */
+    border-radius: 50px;
     margin-bottom: 40px;
     transition: 0.5s ease;
 }
@@ -195,7 +173,7 @@ section {
     display: flex;
     justify-content: center;
     color: var(--primary-color);
-    font-size: 2.5em; 
+    font-size: 2.5em;
     font-weight: 800;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -212,7 +190,7 @@ section {
 .card {
     background-color: var(--card-bg);
     width: 21.25em;
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.15); 
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
@@ -220,13 +198,13 @@ section {
 }
 
 .card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 10px 40px rgba(0, 255, 255, 0.2); /* More prominent glow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 255, 255, 0.2);
 }
 
 .card .icon {
     color: var(--primary-color);
-    font-size: 6em; /* Slightly smaller for better card balance */
+    font-size: 6em;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -237,7 +215,7 @@ section {
 
 .info h3 {
     color: var(--primary-color);
-    font-size: 1.5em; 
+    font-size: 1.5em;
     font-weight: 700;
     margin: 10px;
     text-transform: capitalize;
@@ -260,7 +238,6 @@ section {
     color: var(--text-light);
 }
 
-/* Specific styles for the technical skills list */
 .skills-list {
     text-align: left !important;
     padding-left: 20px;
@@ -279,7 +256,6 @@ section {
     font-size: 1.2em;
 }
 
-/* Specific styles for the soft skills list */
 .soft-skills-list {
     text-align: left !important;
     padding-left: 20px;
@@ -296,7 +272,10 @@ section {
 /* --- Projects Section --- */
 .projects .content {
     margin-top: 30px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -309,7 +288,7 @@ section {
 
 .project-card {
     background-color: var(--card-bg);
-    border: 1px solid rgba(0, 255, 255, 0.1); /* Subtle border matching the glow */
+    border: 1px solid rgba(0, 255, 255, 0.1);
     min-height: 14em;
     width: 23em;
     overflow: hidden;
@@ -445,4 +424,36 @@ section {
     }
 
     .main-content h2 {
-        font-size
+        font-size: 1em;
+    }
+
+    .main-content h2 span {
+        font-size: 2.5em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .social-icons {
+        margin-top: 10px;
+    }
+}
